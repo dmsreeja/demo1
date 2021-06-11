@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="id1"  class="demo"> hello</h1>
+    <h2 id="id2" class="demo"> hi </h2>
+    <p id="3" class="demo"> welcome </p>
+    <div id="4" class="sample">
+        <p>
+            this is DOM
+        </p>
+    </div>
+
+    <script>
+          var element1 = document.querySelectorAll(".demo")
+          console.log(element1);
+    
+          var atag=document.createElement("a")
+          atag.href = "https://www.youtube.com"
+          atag.textContent="youtube"
+          atag.style.colorInterpolation="pink"
+
+          //upload to the body of the document
+          document.body.append(atag)
+
+          document.body.insertBefore(atag, document.getElementById("id2"))
+
+          atag.style.textDecoration="none"
+
+          document.body.removeChild(atag)
+
+    </script>
+</body>
+</html>
